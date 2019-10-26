@@ -5,10 +5,10 @@ $("#targetNumber").text(targetNumber);
 
 
 
-var Cry1 = Math.floor(Math.random() * 11) + 1;
-var Cry2 = Math.floor(Math.random() * 11) + 1;
-var Cry3 = Math.floor(Math.random() * 11) + 1;
-var Cry4 = Math.floor(Math.random() * 11) + 1;
+var Crystal1 = Math.floor(Math.random() * 11) + 1;
+var Crystal2 = Math.floor(Math.random() * 11) + 1;
+var Crystal3 = Math.floor(Math.random() * 11) + 1;
+var Crystal4 = Math.floor(Math.random() * 11) + 1;
 
 
 $("#winCounter").html(winCounter);
@@ -46,8 +46,8 @@ function lose() {
 	restartGame();
 }
 
-$('#Cry1').on ('click', function(){
-    counter = counter + Cry1;
+$('#Crystal1').on ('click', function(){
+    counter = counter + Crystal1;
     
     $('#curScore').text(counter); 
           
@@ -59,8 +59,8 @@ $('#Cry1').on ('click', function(){
         }   
   });  
 
-$('#Cry2').on ('click', function(){
-    counter = counter + Cry2;
+$('#Crystal2').on ('click', function(){
+    counter = counter + Crystal2;
     
     $('#curScore').text(counter); 
          
@@ -72,8 +72,8 @@ $('#Cry2').on ('click', function(){
         }   
   });  
 
-$('#Cry3').on ('click', function(){
-    counter = counter + Cry3;
+$('#Crystal3').on ('click', function(){
+    counter = counter + Crystal3;
     
     $('#curScore').text(counter); 
           
@@ -85,8 +85,8 @@ $('#Cry3').on ('click', function(){
         }   
   });  
 
-$('#Cry4').on ('click', function(){
-    counter = counter + Cry4;
+$('#Crystal4').on ('click', function(){
+    counter = counter + Crystal4;
     
     $('#curScore').text(counter); 
          
