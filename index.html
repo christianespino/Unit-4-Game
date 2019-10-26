@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <title>Crystal game</title>
+                <meta name="description" content="">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="assets/css/reset.css">
+                <link rel="stylesheet" href="assets/css/style.css">
+                <script type="text/javascript" src="assets/javascript/jquery-3.4.1.min.js" link></script>
+            </head>
+<body>
+
+<h1 class="title">Crystals Collector!</h1>  
+
+
+<div class="instruction-box">
+  <p class="instructions">You will be given a random "number to guess" at the start of the game.</p>
+      <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. </p>
+      <p>You win the game by matching your total score to the "number to guess". You lose the game if your total score goes above he random number. </p>
+      <p>The value of each crystal is hidden from you until you click on it.</p>
+      <p>Each time the game starts, the values on the crystals change too!</p>
+</div>
+
+
+<!-- <div id="target-number">
+<p id="numGuess">Number to Guess:<br><br> <span id="targetNumber"></span></p>
+</div>
+
+<div id="wins-losses">
+  <p id="wins">Wins: <span id="winCounter"></span></p>
+  <p id="losses">Losses: <span id="lossCounter"></span></p>
+</div> -->
+
+<div class="target-number">
+        <div class="number-guess">
+            <h2 class="targetNumber">0</h2>
+        </div>
+        
+        <div class="win-loss">
+            <p>Wins: <span class="wins">0</span></p>    
+            <p>Losses: <span class="losses">0</span></p>
+
+         </div>
+
+
+
+<div class="back">
+  <img class="crystal-img" id="Cry1" src="images/cry1.png" alt="Cry1">
+</div>
+<div class="back">
+  <img class="crystal-img" id="Cry2" src="images/cry2.png" alt="Cry2">
+</div>
+<div class="back">
+  <img class="crystal-img" id="Cry3" src="images/cry3.png" alt="Cry3">
+</div>
+<div class="back">
+  <img class="crystal-img" id="Cry4" src="images/cry4.png" alt="Cry4">
+</div>
+
+
+
+<div class="score">
+  <p class="score-txt">Your total score is:</p>
+</div>
+
+
+
+<div class="score-back">
+  <div class="curScore"></div>
+</div>
+
+
+<script src="assets/javascript/games.js"></script>
+</body>
+</html>
