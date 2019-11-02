@@ -1,7 +1,7 @@
 var winCounter = 0;
 var lossCounter = 0;
 var targetNumber = Math.floor(Math.random() * 101) + 19;
-$("#targetNumber").text(targetNumber);
+$(".targetNumber").text(targetNumber);
 
 
 
@@ -9,13 +9,14 @@ var Crystal1 = Math.floor(Math.random() * 11) + 1;
 var Crystal2 = Math.floor(Math.random() * 11) + 1;
 var Crystal3 = Math.floor(Math.random() * 11) + 1;
 var Crystal4 = Math.floor(Math.random() * 11) + 1;
+console.log("crystal number", Crystal1, Crystal2, Crystal3, Crystal4)
 
 
-$("#winCounter").html(winCounter);
-$("#lossCounter").html(lossCounter);
+$(".wins").html(winCounter);
+$(".losses").html(lossCounter);
 
 var counter = 0;
-$("#curScore").text(counter);
+$(".curScore").text(counter);
 
 function restartGame() {
 
@@ -26,7 +27,7 @@ Cry2 = Math.floor(Math.random() * 11) + 1;
 Cry3 = Math.floor(Math.random() * 11) + 1;
 Cry4 = Math.floor(Math.random() * 11) + 1;
 counter = 0;
-$("#curScore").text(counter);
+$(".curScore").text(counter);
 
 }
 
@@ -34,7 +35,7 @@ function win() {
 
 	alert("You win!");
 	winCounter ++;
-	$("#winCounter").text(winCounter);
+	$(".wins").text(winCounter);
 	restartGame();
 }
 
@@ -42,14 +43,14 @@ function lose() {
 
 	alert("You lose!");
 	lossCounter ++;
-	$("#lossCounter").text(lossCounter);
+	$(".losses").text(lossCounter);
 	restartGame();
 }
 
 $('#Crystal1').on ('click', function(){
     counter = counter + Crystal1;
     
-    $('#curScore').text(counter); 
+    $('.curScore').text(counter); 
           
         if (counter == targetNumber){
           win();
@@ -62,7 +63,7 @@ $('#Crystal1').on ('click', function(){
 $('#Crystal2').on ('click', function(){
     counter = counter + Crystal2;
     
-    $('#curScore').text(counter); 
+    $('.curScore').text(counter); 
          
         if (counter == targetNumber){
           win();
@@ -75,7 +76,7 @@ $('#Crystal2').on ('click', function(){
 $('#Crystal3').on ('click', function(){
     counter = counter + Crystal3;
     
-    $('#curScore').text(counter); 
+    $('.curScore').text(counter); 
           
         if (counter == targetNumber){
           win();
@@ -88,7 +89,7 @@ $('#Crystal3').on ('click', function(){
 $('#Crystal4').on ('click', function(){
     counter = counter + Crystal4;
     
-    $('#curScore').text(counter); 
+    $('.curScore').text(counter); 
          
         if (counter == targetNumber){
           win();
